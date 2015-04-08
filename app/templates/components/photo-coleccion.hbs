@@ -1,0 +1,13 @@
+
+
+<div class='row'>
+  <h3>{{titulo}}</h3>
+
+  <div class="col-lg-12">
+    {{#each m in model}}
+      <a {{action "visualizar" m.media$group.media$content.0.url}}>
+        {{img-wrap class='imagen' src=m.media$group.media$thumbnail.0.url alt="Landscape"}}
+      </a>
+    {{/each}}
+  </div>
+</div>

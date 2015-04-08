@@ -1,0 +1,27 @@
+<div class="page-header center">
+  <h1>Videos</h1>
+</div>
+
+<div class="bs-component">
+  <div class='row'>
+
+    <div class="col-lg-4">
+      
+      <h3>&nbsp;</h3>
+
+      <div class="bs-component">
+        <div class="list-group">
+          {{#each v in model}}
+            {{#link-to 'videos.play' v class='list-group-item'}} {{v.titulo}} {{/link-to}}
+          {{/each}}
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-7">
+      {{outlet}}
+    </div>
+
+  </div>
+</div>

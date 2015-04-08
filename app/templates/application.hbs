@@ -1,0 +1,68 @@
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <a href='/pilas-website-test/' class="navbar-brand">pilas-engine</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+
+            {{#link-to "index" tagName='li' href=false}}<a href=#>Principal</a>{{/link-to}}
+            {{#link-to "blog" tagName='li' href=false}}<a href=#>Noticias</a>{{/link-to}}
+
+            {{#link-to "foro" tagName='li' href=false}}<a href="">Foro</a>{{/link-to}}
+            {{#link-to "descargas" tagName='li'}}<a href="">Descargas</a>{{/link-to}}
+
+            {{#link-to "docs" tagName='li'}}<a href="">Docs</a>{{/link-to}}
+            {{#link-to "galeria" tagName='li'}}<a href="">Galería</a>{{/link-to}}
+            {{#link-to "videos" tagName='li'}}<a href="">Videos</a>{{/link-to}}
+            {{#link-to "acercade" tagName='li'}}<a href="">Acerca de ...</a>{{/link-to}}
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="container"  id='top'>
+  <div class="bs-docs-section clearfix">
+        <div class="row">
+
+          <div class="col-lg-12">
+
+            {{outlet}}
+            
+          </div>
+        </div>
+      </div>
+
+  <footer>
+    <div class="row center">
+      <div class="col-lg-12">
+
+        <a href="#" class="logo_footer"><span class="hide">pilas engine</span></a>
+
+            <div class='copyright'>&copy; Hugo Ruscitti</div>
+
+
+          <div id='github-footer'>
+            <div id="github-star"><iframe src="http://ghbtns.com/github-btn.html?user=hugoruscitti&repo=pilas&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></div>
+            <div id="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=hugoruscitti&repo=pilas&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe></div>
+          </div>
+
+          <!--
+          <div style="margin: 10px;">Con el respaldo de <a target="_blank" href="http://www.conectarigualdad.gob.ar">Conectar Igualdad</a></div>
+        -->
+
+
+      </div>
+    </div>
+
+  </footer>
+
+</div>

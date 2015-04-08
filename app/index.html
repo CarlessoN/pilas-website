@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>pilas-engine</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for 'head'}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="assets/pilas-website-test.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    {{content-for 'head-footer'}}
+
+  </head>
+  <body>
+
+    {{content-for 'body'}}
+
+    <script src="assets/vendor.js"></script>
+    <script src="assets/pilas-website-test.js"></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/jquery-2.1.3.min.js'></script>
+    <script src='js/datos.js'></script>
+    <script src='js/photos-ejemplos.js'></script>
+    <script src='js/photos-equipos.js'></script>
+    <script src='js/photos-sistemas.js'></script>
+    <script src='js/photos-eventos.js'></script>
+    <script src='js/jquery.magnific-popup.js'></script>
+
+    {{content-for 'body-footer'}}
+
+    <img style='display: none' src="images/cargando.png" alt="">
+
+    <script type='text/javascript'>
+      var _ues = {
+        host:'pilas.userecho.com',
+        forum:'15341',
+        lang:'en',
+        tab_corner_radius:10,
+        tab_font_size:20,
+        tab_image_hash:'SWRlYXM%3D',
+        tab_alignment:'right',
+        tab_text_color:'#FFFFFF',
+        tab_bg_color:'#4A9447',
+        tab_hover_color:'#F45C5C'
+      };
+
+      (function() {
+        var _ue = document.createElement('script'); _ue.type = 'text/javascript'; _ue.async = true;
+        _ue.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.userecho.com/js/widget-1.4.gz.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_ue, s);
+      })();
+    </script>
+
+  </body>
+</html>

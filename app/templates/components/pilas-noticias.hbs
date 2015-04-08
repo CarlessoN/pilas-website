@@ -1,0 +1,24 @@
+{{#each noticia in logs}}
+
+<div class='pilas-noticia'>
+
+  <div class='meta'>
+    <i class='glyphicon glyphicon-time'></i>
+    {{ago noticia.date-gmt 'es'}}
+  </div>
+
+  <div class='contenido'>
+    <h3>{{noticia.regular-title}}</h3>
+
+    <p>
+      {{safe-html value=noticia.regular-body}}
+    </p>
+
+    <p>
+      <a {{bind-attr href='noticia.url-with-slug'}} target="_blank">ver mas ...</a>
+    </p>
+  </div>
+
+</div>
+
+{{/each}}

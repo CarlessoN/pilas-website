@@ -1,0 +1,24 @@
+<div class="page-header center">
+  <h1>Noticias</h1>
+</div>
+
+<div class="bs-component">
+  <div class='row'>
+
+    <div class="col-lg-12">
+
+      <a href='http://pilas-engine.tumblr.com/rss'>Suscribirse al RSS</a>
+
+      {{#each n in model}}
+        {{n}}
+      {{/each}}
+
+
+
+      {{#pilas-noticias}}{{/pilas-noticias}}
+
+      <p><a href='http://pilas-engine.tumblr.com'>Ver noticias anteriores</a>
+
+    </div>
+  </div>
+</div>
